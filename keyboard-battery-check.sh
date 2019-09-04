@@ -17,7 +17,7 @@ BATT=`ioreg -c AppleDeviceManagementHIDEventService -r -l | grep -i keyboard -A 
 COMPARE=${1:-20}
 
 if [ -z "$BATT" ]; then
-  echo 'No mouse found.'
+  echo 'No keyboard found.'
   exit 0
 fi
 
